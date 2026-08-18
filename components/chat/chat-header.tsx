@@ -5,7 +5,7 @@ import Link from "next/link";
 import { memo } from "react";
 import { Button } from "@/components/ui/button";
 import { useSidebar } from "@/components/ui/sidebar";
-import { VercelIcon } from "./icons";
+import { NalixumMark } from "./nalixum-logo";
 import { VisibilitySelector, type VisibilityType } from "./visibility-selector";
 
 function PureChatHeader({
@@ -35,12 +35,14 @@ function PureChatHeader({
       </Button>
 
       <Link
-        className="flex size-8 items-center justify-center rounded-lg md:hidden"
-        href="https://vercel.com/templates/next.js/chatbot"
-        rel="noopener noreferrer"
-        target="_blank"
+        aria-label="Nalixum home"
+        className="flex items-center gap-2 rounded-lg md:hidden"
+        href="/"
       >
-        <VercelIcon size={14} />
+        <NalixumMark size={18} />
+        <span className="font-semibold text-[15px] tracking-tight text-foreground">
+          Nalixum
+        </span>
       </Link>
 
       {!isReadonly && (
@@ -49,20 +51,6 @@ function PureChatHeader({
           selectedVisibilityType={selectedVisibilityType}
         />
       )}
-
-      <Button
-        asChild
-        className="hidden rounded-lg bg-foreground px-4 text-background hover:bg-foreground/90 md:ml-auto md:flex"
-      >
-        <Link
-          href="https://vercel.com/templates/next.js/chatbot"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <VercelIcon size={16} />
-          Deploy with Vercel
-        </Link>
-      </Button>
     </header>
   );
 }

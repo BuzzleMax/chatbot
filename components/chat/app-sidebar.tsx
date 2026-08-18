@@ -1,11 +1,6 @@
 "use client";
 
-import {
-  MessageSquareIcon,
-  PanelLeftIcon,
-  PenSquareIcon,
-  TrashIcon,
-} from "lucide-react";
+import { PanelLeftIcon, PenSquareIcon, TrashIcon } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import type { User } from "next-auth";
@@ -13,6 +8,7 @@ import { useCallback, useState } from "react";
 import { toast } from "sonner";
 import { useSWRConfig } from "swr";
 import { unstable_serialize } from "swr/infinite";
+import { NalixumMark } from "@/components/chat/nalixum-logo";
 import {
   getChatHistoryPaginationKey,
   SidebarHistory,
@@ -91,10 +87,10 @@ export function AppSidebar({ user }: { user: User | undefined }) {
                 <SidebarMenuButton
                   asChild
                   className="size-8 !px-0 items-center justify-center group-data-[collapsible=icon]:group-hover/logo:opacity-0"
-                  tooltip="Chatbot"
+                  tooltip="Nalixum"
                 >
                   <Link href="/" onClick={closeMobile}>
-                    <MessageSquareIcon className="size-4 text-sidebar-foreground/50" />
+                    <NalixumMark size={18} />
                   </Link>
                 </SidebarMenuButton>
                 <Tooltip>
@@ -111,6 +107,9 @@ export function AppSidebar({ user }: { user: User | undefined }) {
                   </TooltipContent>
                 </Tooltip>
               </div>
+              <span className="ml-1 flex-1 font-semibold text-[15px] tracking-tight text-foreground group-data-[collapsible=icon]:hidden">
+                Nalixum
+              </span>
               <div className="group-data-[collapsible=icon]:hidden">
                 <SidebarTrigger className="text-sidebar-foreground/60 transition-colors duration-150 hover:text-sidebar-foreground" />
               </div>
