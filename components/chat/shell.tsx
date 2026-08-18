@@ -19,6 +19,7 @@ import {
 } from "@/hooks/use-artifact";
 import type { Attachment, ChatMessage } from "@/lib/types";
 import { cn } from "@/lib/utils";
+import { AmbientGlow, type GlowState } from "./ambient-glow";
 import { Artifact } from "./artifact";
 import { ChatHeader } from "./chat-header";
 import { DataStreamHandler } from "./data-stream-handler";
@@ -110,6 +111,17 @@ export function ChatShell() {
     window.location.href = `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/`;
   }, []);
 
+  let glowState: GlowState = "idle";
+  if (status === "error") {
+    glowState = "error";
+  } else if (status === "submitted") {
+    glowState = "thinking";
+  } else if (status === "streaming") {
+    glowState = "generating";
+  } else if (input.trim().length > 0) {
+    glowState = "typing";
+  }
+
   return (
     <>
       <div className="flex h-dvh w-full flex-row overflow-hidden">
@@ -129,6 +141,7 @@ export function ChatShell() {
             <Messages
               addToolApprovalResponse={addToolApprovalResponse}
               chatId={chatId}
+              glowState={glowState}
               isArtifactVisible={isArtifactVisible}
               isLoading={isLoading}
               isReadonly={isReadonly}
@@ -140,6 +153,10 @@ export function ChatShell() {
               status={status}
               votes={votes}
             />
+
+            {messages.length > 0 && (
+              <AmbientGlow state={glowState} variant="ambient" />
+            )}
 
             <div className="sticky bottom-0 z-1 mx-auto flex w-full max-w-4xl gap-2 border-t-0 bg-background px-2 pb-3 md:px-4 md:pb-4">
               {!isReadonly && (

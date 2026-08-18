@@ -48,37 +48,40 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(0.985 0 0);
-  --foreground: oklch(0.12 0 0);
+  --background: oklch(0.99 0.002 285);
+  --foreground: oklch(0.17 0.01 285);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.12 0 0);
+  --card-foreground: oklch(0.17 0.01 285);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.12 0 0);
-  --primary: oklch(0.12 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.965 0 0);
-  --secondary-foreground: oklch(0.38 0 0);
-  --muted: oklch(0.94 0 0);
-  --muted-foreground: oklch(0.58 0 0);
-  --accent: oklch(0.965 0 0);
-  --accent-foreground: oklch(0.12 0 0);
-  --destructive: oklch(0.55 0.15 25);
-  --border: oklch(0.9 0 0);
-  --input: oklch(0.9 0 0);
-  --ring: oklch(0.5 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.97 0 0);
-  --sidebar-foreground: oklch(0.38 0 0);
-  --sidebar-primary: oklch(0.12 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.12 0 0 / 0.06);
-  --sidebar-accent-foreground: oklch(0.12 0 0);
-  --sidebar-border: oklch(0.88 0 0);
-  --sidebar-ring: oklch(0.5 0 0);
+  --popover-foreground: oklch(0.17 0.01 285);
+  --primary: oklch(0.52 0.19 288);
+  --primary-foreground: oklch(0.99 0.002 285);
+  --secondary: oklch(0.965 0.003 285);
+  --secondary-foreground: oklch(0.38 0.02 288);
+  --muted: oklch(0.955 0.003 285);
+  --muted-foreground: oklch(0.55 0.015 285);
+  --accent: oklch(0.96 0.012 288);
+  --accent-foreground: oklch(0.35 0.08 288);
+  --destructive: oklch(0.55 0.18 25);
+  --border: oklch(0.91 0.004 285);
+  --input: oklch(0.91 0.004 285);
+  --ring: oklch(0.55 0.17 288);
+  --chart-1: oklch(0.55 0.19 288);
+  --chart-2: oklch(0.6 0.16 255);
+  --chart-3: oklch(0.62 0.15 300);
+  --chart-4: oklch(0.7 0.13 240);
+  --chart-5: oklch(0.65 0.18 320);
+  --sidebar: oklch(0.975 0.003 285);
+  --sidebar-foreground: oklch(0.4 0.012 285);
+  --sidebar-primary: oklch(0.52 0.19 288);
+  --sidebar-primary-foreground: oklch(0.99 0.002 285);
+  --sidebar-accent: oklch(0.52 0.19 288 / 0.08);
+  --sidebar-accent-foreground: oklch(0.35 0.08 288);
+  --sidebar-border: oklch(0.9 0.004 285);
+  --sidebar-ring: oklch(0.55 0.17 288);
+
+  --nx-purple: oklch(0.55 0.2 295);
+  --nx-blue: oklch(0.58 0.17 255);
 
   --shadow-card: 0 1px 3px oklch(0 0 0 / 0.05), 0 1px 1px oklch(0 0 0 / 0.03);
   --shadow-float:
@@ -95,37 +98,40 @@
 }
 
 .dark {
-  --background: oklch(0.195 0 0);
-  --foreground: oklch(0.94 0 0);
-  --card: oklch(0.225 0 0);
-  --card-foreground: oklch(0.94 0 0);
-  --popover: oklch(0.225 0 0);
-  --popover-foreground: oklch(0.94 0 0);
-  --primary: oklch(0.94 0 0);
-  --primary-foreground: oklch(0.195 0 0);
-  --secondary: oklch(0.26 0 0);
-  --secondary-foreground: oklch(0.75 0 0);
-  --muted: oklch(0.165 0 0);
-  --muted-foreground: oklch(0.6 0 0);
-  --accent: oklch(0.26 0 0);
-  --accent-foreground: oklch(0.94 0 0);
-  --destructive: oklch(0.7 0.15 25);
-  --border: oklch(0.27 0 0);
-  --input: oklch(0.27 0 0);
-  --ring: oklch(0.45 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.175 0 0);
-  --sidebar-foreground: oklch(0.78 0 0);
-  --sidebar-primary: oklch(0.94 0 0);
-  --sidebar-primary-foreground: oklch(0.195 0 0);
-  --sidebar-accent: oklch(0.94 0 0 / 0.06);
-  --sidebar-accent-foreground: oklch(0.94 0 0);
-  --sidebar-border: oklch(0.25 0 0);
-  --sidebar-ring: oklch(0.45 0 0);
+  --background: oklch(0.145 0.008 285);
+  --foreground: oklch(0.95 0.004 285);
+  --card: oklch(0.185 0.009 285);
+  --card-foreground: oklch(0.95 0.004 285);
+  --popover: oklch(0.185 0.009 285);
+  --popover-foreground: oklch(0.95 0.004 285);
+  --primary: oklch(0.66 0.18 290);
+  --primary-foreground: oklch(0.14 0.01 285);
+  --secondary: oklch(0.23 0.01 285);
+  --secondary-foreground: oklch(0.78 0.008 285);
+  --muted: oklch(0.19 0.008 285);
+  --muted-foreground: oklch(0.62 0.012 285);
+  --accent: oklch(0.26 0.02 288);
+  --accent-foreground: oklch(0.85 0.05 288);
+  --destructive: oklch(0.65 0.19 22);
+  --border: oklch(0.26 0.008 285);
+  --input: oklch(0.26 0.008 285);
+  --ring: oklch(0.6 0.17 290);
+  --chart-1: oklch(0.66 0.18 290);
+  --chart-2: oklch(0.65 0.16 255);
+  --chart-3: oklch(0.7 0.15 305);
+  --chart-4: oklch(0.68 0.14 240);
+  --chart-5: oklch(0.7 0.17 325);
+  --sidebar: oklch(0.125 0.007 285);
+  --sidebar-foreground: oklch(0.72 0.01 285);
+  --sidebar-primary: oklch(0.66 0.18 290);
+  --sidebar-primary-foreground: oklch(0.14 0.01 285);
+  --sidebar-accent: oklch(0.66 0.18 290 / 0.1);
+  --sidebar-accent-foreground: oklch(0.88 0.03 288);
+  --sidebar-border: oklch(0.22 0.008 285);
+  --sidebar-ring: oklch(0.6 0.17 290);
+
+  --nx-purple: oklch(0.62 0.24 295);
+  --nx-blue: oklch(0.64 0.2 255);
 
   --shadow-card:
     inset 0 1px 0 oklch(1 0 0 / 0.04), 0 1px 2px oklch(0 0 0 / 0.2),
@@ -375,6 +381,154 @@ textarea:focus-visible {
 
 @utility composer-glow {
   animation: glow-pulse 2s ease-in-out infinite;
+}
+
+/* ============================================================
+   Nalixum ambient AI glow
+   GPU-friendly: only transform + opacity animate.
+   ============================================================ */
+@keyframes nx-breathe {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(0, 0, 0) scale(1.12);
+  }
+}
+
+@keyframes nx-drift-p {
+  0% {
+    transform: translate3d(-7%, -5%, 0) scale(1);
+  }
+  33% {
+    transform: translate3d(6%, 4%, 0) scale(1.1);
+  }
+  66% {
+    transform: translate3d(-3%, 7%, 0) scale(0.97);
+  }
+  100% {
+    transform: translate3d(-7%, -5%, 0) scale(1);
+  }
+}
+
+@keyframes nx-drift-b {
+  0% {
+    transform: translate3d(7%, 5%, 0) scale(1.03);
+  }
+  33% {
+    transform: translate3d(-6%, -4%, 0) scale(0.95);
+  }
+  66% {
+    transform: translate3d(4%, -7%, 0) scale(1.12);
+  }
+  100% {
+    transform: translate3d(7%, 5%, 0) scale(1.03);
+  }
+}
+
+.nx-glow {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.nx-blob {
+  position: absolute;
+  aspect-ratio: 1;
+  border-radius: 9999px;
+  transition:
+    opacity 1.2s var(--ease-smooth),
+    filter 1.2s var(--ease-smooth);
+  will-change: transform, opacity;
+}
+
+.nx-blob-purple {
+  width: min(58%, 30rem);
+  background: radial-gradient(circle, var(--nx-purple) 0%, transparent 68%);
+  opacity: 0.16;
+  filter: blur(48px);
+  animation: nx-breathe 10s ease-in-out infinite;
+}
+
+.nx-blob-blue {
+  width: min(52%, 26rem);
+  background: radial-gradient(circle, var(--nx-blue) 0%, transparent 68%);
+  opacity: 0.14;
+  filter: blur(52px);
+  animation: nx-breathe 12s ease-in-out infinite reverse;
+}
+
+/* ambient (in-conversation) variant is smaller + fainter, anchored low */
+.nx-glow[data-variant="ambient"] {
+  align-items: end;
+  padding-bottom: 4rem;
+}
+.nx-glow[data-variant="ambient"] .nx-blob-purple {
+  width: min(70%, 20rem);
+  opacity: 0.1;
+  filter: blur(40px);
+}
+.nx-glow[data-variant="ambient"] .nx-blob-blue {
+  width: min(64%, 18rem);
+  opacity: 0.09;
+  filter: blur(44px);
+}
+
+/* ---- states ---- */
+.nx-glow[data-state="typing"] .nx-blob-purple {
+  opacity: 0.24;
+  animation-duration: 7s;
+}
+.nx-glow[data-state="typing"] .nx-blob-blue {
+  opacity: 0.2;
+  animation-duration: 8s;
+}
+
+.nx-glow[data-state="thinking"] .nx-blob-purple {
+  opacity: 0.3;
+  animation: nx-drift-p 12s ease-in-out infinite;
+}
+.nx-glow[data-state="thinking"] .nx-blob-blue {
+  opacity: 0.26;
+  animation: nx-drift-b 12s ease-in-out infinite;
+}
+
+.nx-glow[data-state="searching"] .nx-blob-purple {
+  opacity: 0.36;
+  animation: nx-drift-p 7s ease-in-out infinite;
+}
+.nx-glow[data-state="searching"] .nx-blob-blue {
+  opacity: 0.32;
+  animation: nx-drift-b 6.5s ease-in-out infinite;
+}
+
+.nx-glow[data-state="generating"] .nx-blob-purple {
+  opacity: 0.34;
+  animation: nx-drift-p 5.5s ease-in-out infinite;
+}
+.nx-glow[data-state="generating"] .nx-blob-blue {
+  opacity: 0.3;
+  animation: nx-drift-b 5s ease-in-out infinite;
+}
+
+.nx-glow[data-state="error"] .nx-blob-purple {
+  background: radial-gradient(circle, var(--destructive) 0%, transparent 68%);
+  opacity: 0.2;
+  animation-duration: 6s;
+}
+.nx-glow[data-state="error"] .nx-blob-blue {
+  opacity: 0.08;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nx-blob {
+    animation: none !important;
+  }
 }
 
 .ProseMirror {
